@@ -97,7 +97,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px", maxWidth: "900px", margin: "auto" }}>
-      <h1>Question Management</h1>
+      <h1>Question Management App</h1>
 
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: "10px" }}>
