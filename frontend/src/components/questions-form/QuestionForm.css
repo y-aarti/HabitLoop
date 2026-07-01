@@ -1,0 +1,119 @@
+.question-form {
+  width: 100%;
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(111, 90, 255, 0.12);
+  box-shadow: 0 16px 35px rgba(103, 78, 255, 0.07);
+  display: grid;
+  gap: 12px;
+}
+
+.question-form__title {
+  font-size: 1.15rem;
+  line-height: 1.2;
+  color: #291c4e;
+}
+
+.question-form__controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.question-form__field-group {
+  display: grid;
+  gap: 8px;
+}
+
+.question-form__action {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.question-form__label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #62578c;
+}
+
+.question-form__input,
+.question-form__textarea {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #e8e6ff;
+  background: #faf8ff;
+  padding: 12px 14px;
+  color: #2b2140;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.question-form__textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.question-form__input:focus,
+.question-form__textarea:focus {
+  outline: none;
+  border-color: #7b5afe;
+  box-shadow: 0 0 0 4px rgba(123, 90, 254, 0.14);
+  transform: translateY(-1px);
+}
+
+.question-form__submit,
+.question-form__cancel {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-form__submit {
+  background: linear-gradient(135deg, #8d70ff 0%, #6845ff 100%);
+  color: #ffffff;
+}
+
+.question-form__cancel {
+  background: #efeafe;
+  color: #4d3ea8;
+}
+
+.question-form__submit:hover,
+.question-form__cancel:hover {
+  transform: translateY(-1px);
+}
+
+.question-form__submit:focus-visible,
+.question-form__cancel:focus-visible {
+  outline: 3px solid rgba(123, 90, 254, 0.4);
+  outline-offset: 4px;
+}
+
+@media (max-width: 840px) {
+  .question-form {
+    padding: 18px;
+  }
+
+  .question-form__controls {
+    grid-template-columns: 1fr;
+  }
+
+  .question-form__action {
+    justify-content: stretch;
+  }
+
+  .question-form__submit,
+  .question-form__cancel {
+    flex: 1;
+  }
+}

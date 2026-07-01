@@ -7,13 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const questions = [
-  {
-    id: 1,
-    question: 'What is React???',
-  },
-];
-
 app.get('/questions', (req, res) => {
   const questions = db
     .prepare('SELECT * FROM questions ORDER BY id DESC')
