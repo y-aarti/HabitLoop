@@ -1,37 +1,37 @@
 .question-form {
   width: 100%;
   margin: 0;
-  padding: 16px 18px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(111, 90, 255, 0.12);
-  box-shadow: 0 16px 35px rgba(103, 78, 255, 0.07);
+  padding: 20px 22px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 126, 255, 0.16);
+  box-shadow: 0 14px 35px rgba(112, 87, 234, 0.08);
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 
 .question-form__title {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  color: #291c4e;
+  color: var(--text-h);
 }
 
 .question-form__controls {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) auto;
-  gap: 10px;
-  align-items: end;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
 .question-form__field-group {
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 
 .question-form__action {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -46,8 +46,8 @@
 .question-form__textarea {
   width: 100%;
   border-radius: 14px;
-  border: 1px solid #e8e6ff;
-  background: #faf8ff;
+  border: 1px solid rgba(173, 144, 255, 0.45);
+  background: rgba(253, 246, 255, 0.95);
   padding: 12px 14px;
   color: #2b2140;
   font-size: 0.95rem;
@@ -63,14 +63,15 @@
 .question-form__input:focus,
 .question-form__textarea:focus {
   outline: none;
-  border-color: #7b5afe;
-  box-shadow: 0 0 0 4px rgba(123, 90, 254, 0.14);
+  border-color: rgba(124, 58, 237, 0.55);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
   transform: translateY(-1px);
 }
 
 .question-form__submit,
 .question-form__cancel {
   padding: 10px 14px;
+  min-width: 120px;
   border-radius: 999px;
   border: none;
   font-weight: 700;
@@ -79,13 +80,13 @@
 }
 
 .question-form__submit {
-  background: linear-gradient(135deg, #8d70ff 0%, #6845ff 100%);
+  background: linear-gradient(135deg, #7c5aff 0%, #6d7dff 100%);
   color: #ffffff;
 }
 
 .question-form__cancel {
-  background: #efeafe;
-  color: #4d3ea8;
+  background: rgba(124, 58, 237, 0.12);
+  color: #4f3ca5;
 }
 
 .question-form__submit:hover,

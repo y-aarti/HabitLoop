@@ -28,14 +28,10 @@ function QuestionsList({ questions, onEdit, onDelete }: QuestionsListProps) {
                 <td>{question?.category}</td>
                 <td>{question?.question}</td>
                 <td>
-                  <button type="button" onClick={() => onEdit(question)}>
+                  <button className="questions-list__button questions-list__button--edit" type="button" onClick={() => onEdit(question)}>
                     Edit
                   </button>
-                  <button
-                    type="button"
-                    onClick={() => onDelete(question.id)}
-                    style={{ marginLeft: '10px' }}
-                  >
+                  <button className="questions-list__button questions-list__button--delete" type="button" onClick={() => onDelete(question.id)}>
                     Delete
                   </button>
                 </td>
