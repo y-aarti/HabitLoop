@@ -101,16 +101,6 @@ function Landing() {
 
   return (
     <main className="landing-page">
-      <section className="landing-page__hero">
-        <div className="landing-page__hero-copy">
-          <p className="landing-page__eyebrow">HabitLoop Studio</p>
-          <h1 className="landing-page__headline">Collect thoughtful questions in one calm place.</h1>
-          <p className="landing-page__subtitle">
-            Capture ideas, group them by theme, and keep your list tidy as it grows.
-          </p>
-        </div>
-      </section>
-
       <section className="landing-page__form-section">
         <QuestionForm
           question={question}
